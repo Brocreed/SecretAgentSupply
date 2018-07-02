@@ -2,13 +2,16 @@ html {
   font-family: helvetica;
   font-size: 18px;
   color: white;
-  background-color: black;
+}
+
+header {
+    background-color: black;
 }
 
 header .flex-box {
   display: flex;
   align-items: center;
-  padding: 12px 0px 12px 0.5em;
+  padding: 0.66rem 0px 0.66rem 0.5em;
 }
 
 header img {
@@ -27,6 +30,7 @@ header img {
   height: 25em;
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .headline {
@@ -41,5 +45,78 @@ header img {
 .headline h1 {
   font-size: 2rem;
   line-height: 1.2em;
-  margin-left: .25rem 0px;
+  margin: .25rem 0px;
+}
+
+.headline h4 {
+  font-weight: bold;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: firebrick;
+  padding: 0.75rem;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.products, .info-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.product {
+  width: 30%;
+}
+
+.description {
+  background-color: black;
+}
+
+.product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  padding: 2rem 0;
+  border: 4px solid black;
+}
+
+.product-image img {
+  max-width: 8rem;
+}
+
+.description {
+  display: block;
+  padding: 0.5rem;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.info {
+  width: 35%;
+}
+
+.info .title {
+  display: block;
+  padding: 1rem 2rem;
+  background-color: black;
+}
+
+.information {
+  color: black;
+}
+
+footer {
+  background-color: black;
+  text-align: left;
+  padding: 5rem;
+  margin-top: 4rem;
 }
