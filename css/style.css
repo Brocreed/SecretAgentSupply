@@ -1,4 +1,12 @@
 html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
   font-family: helvetica;
   font-size: 18px;
   color: white;
@@ -119,4 +127,5 @@ footer {
   text-align: left;
   padding: 5rem;
   margin-top: 4rem;
+  width: 100%;
 }
