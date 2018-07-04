@@ -30,7 +30,7 @@ header img {
 
 .flex-box {
   max-width: 960px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 #banner {
@@ -47,6 +47,7 @@ header img {
   position: relative;
   top: 9em;
   padding: 2rem 3rem;
+  font-weight: bold;
 }
 
 
@@ -56,21 +57,24 @@ header img {
   margin: .25rem 0px;
 }
 
-.headline h4 {
-  font-weight: bold;
+nav {
+  background-color: firebrick;
 }
 
-.navigation {
+nav span {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  background-color: firebrick;
   padding: 0.75rem;
 }
 
 .navigation a {
   color: white;
   text-decoration: none;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .products, .info-section {
@@ -128,4 +132,23 @@ footer {
   padding: 5rem;
   margin-top: 4rem;
   width: 100%;
+}
+
+@media only screen and (max-width: 1040px) {
+  .navigation {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  .product {
+    width: 47%;
+  }
 }
