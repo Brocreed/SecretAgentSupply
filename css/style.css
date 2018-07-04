@@ -33,10 +33,10 @@ header img {
   margin: 0 auto;
 }
 
-#banner {
+.banner {
   background-image: url(../images/moto.jpg);
   height: 25em;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -55,6 +55,27 @@ header img {
   font-size: 2rem;
   line-height: 1.2em;
   margin: .25rem 0px;
+}
+
+@media only screen and (max-width: 470px) {
+  .banner {
+    height: 15rem;
+  }
+
+  .headline {
+    width: 100%;
+    top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  .headline h4 {
+    font-size: .77rem;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+  }
+
 }
 
 nav {
@@ -112,28 +133,6 @@ nav span {
   color: white;
 }
 
-.info {
-  width: 35%;
-}
-
-.info .title {
-  display: block;
-  padding: 1rem 2rem;
-  background-color: black;
-}
-
-.information {
-  color: black;
-}
-
-footer {
-  background-color: black;
-  text-align: left;
-  padding: 5rem;
-  margin-top: 4rem;
-  width: 100%;
-}
-
 @media only screen and (max-width: 1040px) {
   .navigation {
     display: none;
@@ -150,5 +149,54 @@ footer {
 
   .product {
     width: 47%;
+  }
+
+}
+
+.info {
+  width: 35%;
+}
+
+.info .title {
+  display: block;
+  padding: 1rem 2rem;
+  background-color: black;
+}
+
+.information {
+  color: black;
+}
+
+@media only screen and (max-width: 1040px) {
+  .products, .info-section {
+    flex-wrap: wrap;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+}
+
+footer {
+  background-color: black;
+  text-align: left;
+  padding: 5rem 0;
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    text-align: center;
   }
 }
